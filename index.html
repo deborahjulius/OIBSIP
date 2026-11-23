@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn French With Deborah | Speak French With Confidence</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; color: #1A1A2E; line-height: 1.6; }
+h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+
+/* NAVBAR - Sticky */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: #1A1A2E; color: white;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 5%; flex-wrap: wrap;
+}
+nav .logo { font-size: 20px; font-weight: 700; }
+nav .logo span { color: #FF6B6B; }
+nav ul { display: flex; gap: 24px; list-style: none; }
+nav ul a { color: white; text-decoration: none; font-size: 15px; }
+nav ul a:hover { color: #FFD166; }
+nav .btn-small { background: #FF6B6B; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px; }
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1A1A2E 0%, #2D2D5A 100%);
+  color: white; text-align: center;
+  padding: 80px 5% 70px;
+}
+.hero h1 { font-size: 42px; line-height: 1.2; margin-bottom: 16px; }
+.hero h1 span { color: #FFD166; }
+.hero p { font-size: 18px; max-width: 600px; margin: 0 auto 28px; opacity: 0.9; }
+.cta { background: #FF6B6B; color: white; padding: 14px 32px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 17px; display: inline-block; }
+.cta:hover { background: #ff5252; }
+.hero-small { margin-top: 16px; font-size: 13px; opacity: 0.7; }
+
+/* SECTIONS */
+.section { padding: 60px 5%; max-width: 1100px; margin: 0 auto; }
+.section h2 { font-size: 30px; text-align: center; margin-bottom: 10px; }
+.section .subtitle { text-align: center; margin-bottom: 36px; color: #555; }
+
+/* FEATURES - Flexbox */
+.features { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+.card {
+  background: #FFF8F0; border-radius: 16px; padding: 28px;
+  flex: 1 1 280px; max-width: 340px; text-align: center;
+}
+.card h3 { margin: 12px 0 8px; font-size: 20px; }
+.card p { font-size: 15px; color: #555; }
+.card .icon { font-size: 36px; }
+
+/* ABOUT */
+.about { background: #F3F3FA; }
+.about-box { display: flex; gap: 30px; align-items: center; flex-wrap: wrap; }
+.about-box div { flex: 1 1 300px; }
+.about-box img { width: 100%; max-width: 380px; border-radius: 16px; }
+.about-box h3 { font-size: 24px; margin-bottom: 12px; }
+.about-box p { margin-bottom: 12px; color: #444; }
+
+/* TESTIMONIALS */
+.testimonials { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+.testi {
+  background: white; border: 1px solid #eee; border-radius: 16px;
+  padding: 24px; flex: 1 1 280px; max-width: 340px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+.testi p { font-style: italic; margin-bottom: 12px; }
+.testi b { color: #1A1A2E; }
+
+/* FOOTER */
+footer { background: #1A1A2E; color: white; text-align: center; padding: 36px 5%; }
+footer a { color: #FFD166; text-decoration: none; margin: 0 10px; }
+footer p { margin-top: 12px; font-size: 13px; opacity: 0.7; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 30px; }
+  nav ul { gap: 14px; }
+  nav { justify-content: center; gap: 10px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Learn French With <span>Deborah</span></div>
+  <ul>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="btn-small">Join Free</a>
+</nav>
+
+<section class="hero">
+  <h1>Speak French With <span>Confidence</span> in 90 Days</h1>
+  <p>Simple lessons, real conversations, and daily practice — made for beginners in Nigeria and Africa who want to speak French, not just pass exams.</p>
+  <a href="#contact" class="cta">Start Learning Free →</a>
+  <p class="hero-small">No experience needed • 10 mins a day • 2,000+ learners</p>
+</section>
+
+<section class="section" id="features">
+  <h2>Why Learn With Deborah?</h2>
+  <p class="subtitle">We make French easy, fun, and practical.</p>
+  <div class="features">
+    <div class="card">
+      <div class="icon">🗣️</div>
+      <h3>Speak From Day 1</h3>
+      <p>Learn real phrases you can use at the market, at school, and at work — not just grammar rules.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📱</div>
+      <h3>10 Minutes A Day</h3>
+      <p>Short videos and daily vocabulary you can learn on your phone, even with a busy schedule.</p>
+    </div>
+    <div class="card">
+      <div class="icon">👩🏾‍🏫</div>
+      <h3>Learn With A Teacher</h3>
+      <p>Live classes, corrections, and a supportive community that keeps you consistent.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="about-box">
+    <div>
+      <img src="My professional pic..jpeg" alt="Deborah - Learn French With Deborah">
+    </div>
+    <div>
+      <h3>About Deborah</h3>
+      <p>Hi, I'm Deborah — your French teacher and friend. I started learning French as a beginner too, so I know exactly how it feels to be confused, shy, and stuck.</p>
+      <p>That's why I created this page: to teach French in a simple way, in English and Pidgin where needed, so you actually understand and remember.</p>
+      <p><b>Our mission:</b> To help 10,000 Africans speak French confidently for school, work, travel, and Japa opportunities.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="testimonials">
+  <h2>What Our Learners Say</h2>
+  <p class="subtitle">Real people, real progress.</p>
+  <div class="testimonials">
+    <div class="testi">
+      <p>"I used to be scared to speak French. After 3 weeks with Deborah, I can introduce myself and hold a small conversation!"</p>
+      <b>— Glory, Kano</b>
+    </div>
+    <div class="testi">
+      <p>"The lessons are so simple. I learn on my way to work. My boss noticed my French has improved."</p>
+      <b>— Chiamaka, Abuja</b>
+    </div>
+    <div class="testi">
+      <p>"Best decision. I passed my French exam and now I help my younger sister too."</p>
+      <b>— Ibrahim, Lagos</b>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <h3>Ready to Start?</h3>
+  <p style="margin:12px 0 20px;">Join the free WhatsApp class today.</p>
+  <a href="https://www.instagram.com/deborahjulius247?cnvx=eWx3ZWJkMG02amd4">Instagram</a> | <a href="https://youtube.com/@amachukwuuchedeborah?si=EVMi8X0uKBgiIZgM">YouTube</a> | <a href="https://www.tiktok.com/@deborahjulius969?is_from_webapp=1&sender_device=pc">TikTok</a> | <a href="mailto:deborahjulius247@gmail.com">Email Us</a>
+  <p>© 2026 Learn French With Deborah. Built by Amachukwu Uche Deborah for Oasis Infobyte Internship — Level 1 Task 1.</p>
+</footer>
+</body>
+</html>
